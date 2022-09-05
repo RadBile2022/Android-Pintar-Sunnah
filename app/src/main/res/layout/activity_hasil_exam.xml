@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilExamActivity">
+
+    <TextView
+        android:id="@+id/Tv_Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hasil"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Btn_Ulangi"
+        app:layout_constraintStart_toStartOf="@+id/Btn_Ulangi"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Ulangi" />
+
+    <TextView
+        android:id="@+id/Tv_Nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nilai"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_Hasil"
+        app:layout_constraintStart_toStartOf="@+id/Tv_Hasil"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Hasil" />
+
+    <Button
+        android:id="@+id/Btn_Ulangi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ulangi"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_lulus"
+        app:layout_constraintStart_toStartOf="@+id/Tv_lulus"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_lulus" />
+
+    <TextView
+        android:id="@+id/Tv_namaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tv_lulus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="LULUS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Tv_namaUser"
+        app:layout_constraintStart_toStartOf="@+id/Tv_namaUser"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_namaUser" />
+</androidx.constraintlayout.widget.ConstraintLayout>
